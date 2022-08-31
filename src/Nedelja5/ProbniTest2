@@ -1,0 +1,79 @@
+1. Objasniti STEK strukturu podataka
+a) objasniti princip LIFO (Last In, First Out) i kako se ovaj princip koristi prilikom manipulacije STEKOM;
+b) objasniti metode push() i pop();
+c) objasniti kako STEK briše i dodaje elemente i zašto je bitno da se proveri da li je stek prazan (
+metoda isEmpty() ) ili pun ( metoda isFull() ) ;
+d) pretpostavimo da imao prazan STEK ordariti sledeće metode i prikazati STEK nakon korišćenja
+sledećih metoda i izlaz same konzole nakon svih metoda:
+push(23)
+push(22)
+pop()
+push(23)
+pop()
+isEmpty()
+izlaz konzole : {23} false
+\\\\\\\\\\\\\
+Stek je struktura podata u kome se elementi ubacuju jedan po jedan i oni se "slazu" jedan na drugi, Stek koristi princip LIFO.
+
+a) princip LIFO je princim add-ovanja promenjivih u Stek, Last in first out znaci da prvi element koji udje u stek zadnji izlazi
+iz steka, ovo je bitno kod implementacije steka npr. kod ulazenja u stranice i vracanja prethodne stranice.
+b) push() metoda se u steku koristi da bi se ubacio sledeci element u stek, a pop() da se taj element izbaci iz steka.
+c) Stek brise i dodaje elemente uz pomoc push i pop metode , provera da li je ste prazan ili ne je bitna zbog same manipulicije stekom
+i zbog ogranicene velicine steka.
+d)
+
+/////////////
+
+2. Objasniti pojam Apstraktne klase
+\\\\\\\\\\\\\
+Apstraktna klasa u javi se koristi kad neka klasa nema logike u smislu pozivanja (kao npr Animals u jucerasnjem zadatku :D),
+u apstraktnu metodu unosimo stvari koje su iste za za sve nase klase i ona nema metode, i ona sluzi samo za pozivanje u nasim klasama.
+////////////////
+
+3. Objasniti statičku/i: //
+a) promenljivu i kako se ona predstavlja u memoriji;
+b) metodu i njenu povezanost sa objektima i klasama;
+c) blok kada se on poziva i koja je njegova uloga.
+//////////////////////////
+c) staticki blok se pise na pocetak same klase i sluzi da se pozove na sam pocetak programa pre svih metoda, koristi se kada
+zelimo npr. nesto da ispisemo pre pocetka programa.
+\\\\\\\\\\\\\\\\\\\\\\\\\
+
+4. Objasniti pojam konstruktora i koja dva tipa kostruktora postoje.
+///////////////////////////////
+Konstruktor kod klasa se koristi za pozivanje klase , u njemu onosimo podatke koji su nam potrebni za rad te klase.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+5. Objasniti metodu toString(), šta ova metoda vraća (koji tip), i kako šta znači anotacija @Override koju
+možemo koristiti iznad ove metode.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+metoda toString() se koristi da bi nasu klasu prikazali pomocu stringa, tako da ova klasa "vraca" tip String,
+@Override se koristi da bi vec postojecu metodu npr. toString() koja vec postoji u Javi "preradili" (pri nedostatku boljeg prevoda, jer ne mogu da se setim)
+u metodu koja nama treba tj da u nasoj klasi vrati ono sto mi imamo.
+///////////////////////////////
+
+6. Objasniti ključnu reč super i kako se ona koristi prilikom nasleđivanja u Java programskom jeziku.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Kljucna rec super se koristi u konstruktoru klase ukoliko nasa klasa nasledjuje neku klasu, da ne bi unosili sve atribute klase opet
+unesemo kljucnu rec super(atribtuti iz prethodne kase) i nasa klasa u tom slucaju nasledjuje te atribute bez dopisivanja.
+//////////////////////////////
+
+7. Objasniti razliku između ArrayList i LinkedList u Java programskom jeziku.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+I kod nizovnih listi i povezanih listi elementi u memoriji ne idu jedna iza drugog vec imaju pokazivace sa prvog na drugi element,
+sa drugog na treci i td. Razlika izmedju nizovnih listi i povezanih listi je ta sto kod nizovnih listi ti pokazivaci idu samo u jednom
+smeru dok kod nizovnih listi ti pokazivaci idu u oba smera, prvi element pokazuje na drugi obrnuto, drugi element na treci i obrnuto i td.
+tj npr kod pretrazivanja da bi nasli u listi od 10 elementa 8mi(random) element kod nizovnih listi bi morali da krenemo
+od prvog elementa i da idemo 1, 2, 3 dok ne dodjemo do trazenog elementa dok kod linked lista mozemo tipa da krenemo od 10og elementa
+i idemo unazad.
+/////////////////////////////
+
+8. Objasniti korišćenje strukture podataka HashMap i kako se elementi dodaju u ovu strukturu.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+HashMap elementi se dodaju uz pomoc kljuca i podatka koji nam treba. Tj elemente traazimo uz pomoc kljuca
+ (IntelliJ je kriv sto ne znam sintaksu jer samlenj sam da kucam sve).
+
+
+
+
+

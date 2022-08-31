@@ -13,6 +13,7 @@ public class NizoviMinimumMaksimum {
         }
         return max;
     }
+
     public static int Min(int[] arr) {
         int min = arr[0];
         for (int el = 0; el < arr.length; el++) {

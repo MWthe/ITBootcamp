@@ -2,6 +2,7 @@ package Nedelja4;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Zadatak2 {
 
@@ -20,9 +21,27 @@ public class Zadatak2 {
         }
         return count;
     }
+
+    public static int[] noDuplicates2(int [] arr2) {
+        Set <Integer> noDupSet = new TreeSet<>();
+        for (var el : arr2) {
+            noDupSet.add(el);
+        }
+        int[] noDup = new int[noDupSet.size()];
+        var counter = 0;
+        for (var el : noDupSet) {
+            noDup[counter++] = el;
+        }
+
+        return noDup;
+    }
+
+
     public static void main(String[] args) {
 
         int[] arr = {1, 1, 2, 3, 3, 4, 5, 2, 8, 90, 8};
         System.out.println(numberOfDuplicates(arr));
+        System.out.println(noDuplicates2(arr));
+
     }
 }
